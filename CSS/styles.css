@@ -9,10 +9,19 @@
   --main-color: #757575;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::after {
+  box-sizing: inherit;
+}
 body {
   color: var(--main-color);
   background-color: #ffffff;
   font-family: Roboto, sans-serif;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -22,13 +31,31 @@ h2,
 h3,
 h4 {
   color: var(--head-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  outline: 2px solid tomato;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* HEADER */
+
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
 .logo-color {
   color: var(--akcent-color);
 }
 .logo {
+  margin-right: 86px;
   color: var(--head-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -41,17 +68,37 @@ h4 {
   color: var(--main-color);
 }
 
+.header-contact {
+  margin-left: 305px;
+}
+
 /* NAVIGATION */
 
+.navigation {
+  display: flex;
+}
+
 .nav-list {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 }
 .nav-list a {
+  display: block;
   color: var(--head-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+.nav-list .item + .item {
+  margin-left: 50px;
+}
+
 .nav-list a:hover,
 .nav-list a:focus,
 .nav-list a:active {
@@ -63,21 +110,55 @@ h4 {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.contact-list:last-child {
+  margin-left: 20px;
+}
+
 .contact-list:hover,
 .contact-list:focus {
   color: var(--akcent-color);
 }
 
 /* HERO */
+
 .hero-title {
-  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--head-color);
+  padding-bottom: 30px;
+}
+.hero-button {
+  text-align: center;
 }
 
+/* Button */
+
 .button {
+  min-width: 200px;
+  height: 50px;
   color: var(--white-color);
   background-color: var(--akcent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  cursor: pointer;
+  border: none;
+  text-align: center;
 }
 /* BENEFITS */
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -91,6 +172,7 @@ h4 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 /* WHATWEDO */
 
@@ -111,9 +193,23 @@ h4 {
   text-transform: uppercase;
   color: var(--white-color);
   background-color: rgba(47, 48, 58, 0.8);
+  margin: 0;
 }
 
 /* TEAM */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
 
 .team-title {
   font-weight: 700;
@@ -121,6 +217,11 @@ h4 {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.team-cards img {
+  padding-bottom: 30px;
 }
 
 .team-cards h3 {
@@ -128,12 +229,17 @@ h4 {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  padding-bottom: 10px;
 }
 
 .team-cards p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-bottom: 16px;
 }
 
 /* CLIENTS */
