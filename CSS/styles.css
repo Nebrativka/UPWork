@@ -303,21 +303,38 @@ img {
   overflow: hidden;
 }
 
-/* CLIENTS */
+/* =========================================================>CLIENTS<====================================================== */
 .clients-title {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-/* FOOTER */
+.clients-list {
+  display: inline-flex;
+  /* justify-content: space-between; */
+}
+
+.clients-link {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+.clients-link:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* =========================================================>FOOTER<====================================================== */
 .footer-flex {
   display: flex;
-
   align-content: center;
   justify-content: space-between;
+}
+
+.footer-list {
 }
 
 .ftr-flex {
@@ -383,7 +400,7 @@ img {
 
 /* PORTFOLIO-CARDS */
 .outline-class {
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
   margin-bottom: 30px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eeeeee;
