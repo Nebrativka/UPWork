@@ -40,7 +40,7 @@ img {
 
 .container {
   outline: 2px solid tomato;
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -154,11 +154,10 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
+  text-transform: uppercase;
   text-align: center;
   padding-top: 220px;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
 
   color: var(--white-color);
   margin-bottom: 30px;
@@ -353,15 +352,15 @@ img {
 .footer-list {
 }
 
-.ftr-flex {
+/* .ftr-flex {
   display: flex;
-}
+} */
 .logo-scnr {
   color: var(--white-color);
 }
 
 .footer {
-  display: flex;
+  /* display: flex; */
   background-color: #2f303a;
 }
 
