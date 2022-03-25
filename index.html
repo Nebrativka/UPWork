@@ -26,8 +26,8 @@
         </ul>
       </nav>
       <div class="header-contact">
-        <a href="mailto:info@devstudio.com" class="contact-list">info@devstudio.com</a>
-        <a href="tel:+38 096 111 11 11" class="contact-list">+38 096 111 11 11</a>
+        <a href="mailto:info@devstudio.com" class="contact-list mail">info@devstudio.com</a>
+        <a href="tel:+38 096 111 11 11" class="contact-list phone">+38 096 111 11 11</a>
       </div>
 
     </header>
@@ -46,7 +46,9 @@
       <section class="section">
         <ul class="list bnfts-flex">
           <li class="bnfts-item">
-            <!-- <img src="./img/Groupantenna.svg" alt="" /> -->
+            <div class="use-bcc"><svg class="nfts-img">
+                <use href="./img/sprite.svg#icon-antenna"></use>
+              </svg></div>
             <h3 class="benefits-title">Внимание к деталям</h3>
             <p class="benefits-text">
               Идейные соображения, а также начало повседневной работы по
@@ -54,7 +56,11 @@
             </p>
           </li>
           <li class="bnfts-item">
-            <!-- <img src="./img/clock 1.svg" alt="" /> -->
+            <div class="use-bcc">
+              <svg class="nfts-img">
+                <use href="./img/sprite.svg#icon-clock"></use>
+              </svg>
+            </div>
             <h3 class="benefits-title">Пунктуальность</h3>
             <p class="benefits-text">
               Задача организации, в особенности же рамки и место обучения кадров
@@ -62,7 +68,9 @@
             </p>
           </li>
           <li class="bnfts-item">
-            <!-- <img src="./img/diagram 1.svg" alt="" /> -->
+            <div class="use-bcc"><svg class="nfts-img">
+                <use href="./img/sprite.svg#icon-diagram-1"></use>
+              </svg></div>
             <h3 class="benefits-title">Планирование</h3>
             <p class="benefits-text">
               Равным образом консультация с широким активом в значительной
@@ -70,7 +78,9 @@
             </p>
           </li>
           <li class="bnfts-item">
-            <!-- <img src="./img/astronaut 1.svg" alt="" /> -->
+            <div class="use-bcc"><svg class="nfts-img">
+                <use href="./img/sprite.svg#icon-astronaut"></use>
+              </svg></div>
             <h3 class="benefits-title">Современные технологии</h3>
             <p class="benefits-text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -108,12 +118,32 @@
           <li class="team-cards">
             <img src="/img/imgNik.jpg" alt="" />
             <h3>Николай Кучеренко</h3>
-            <p>Product Designer</p>
+            <p>Product Frontend Developer</p>
             <ul class="social-link">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>
+                <a href=""><svg class="icon-team">
+                    <use href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href=""><svg class="icon-team ">
+                    <use href="./img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href=""><svg class="icon-team">
+                    <use href="./img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href=""><svg class="icon-team">
+                    <use href="./img/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </li>
           <li class="team-cards">
@@ -192,7 +222,7 @@
           <b class="ftr-do">Подпишитесь на рассылку</b>
           <form class="">
             <input type="mail" name="mail" id="mail" placeholder="E-mail">
-            <button type="submit" class="button">Подписаться</button>
+            <button type="submit" class=" btn-ftr">Подписаться</button>
           </form>
         </div>
       </div>

@@ -80,7 +80,11 @@ img {
 
 .contact-list {
   color: var(--main-color);
+  display: inline-flex;
 }
+/* .mail {
+  display: inline-flex;
+} */
 
 .header-contact {
   margin-left: 305px;
@@ -183,6 +187,21 @@ img {
 }
 /* BENEFITS */
 
+.nfts-img {
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.use-bcc {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  text-align: center;
+}
+
 .list {
   margin-top: 0;
   margin-bottom: 0;
@@ -195,7 +214,10 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  margin-top: 30px;
+  /* padding-bottom: 21px; */
+  /* margin-bottom: 21px; */
 }
 
 .benefits-text {
@@ -211,7 +233,7 @@ img {
   justify-content: space-between;
 }
 .bnfts-item {
-  outline: 2px solid teal;
+  /* outline: 2px solid teal; */
   width: 270px;
   height: 251px;
 }
@@ -246,6 +268,20 @@ img {
 }
 
 /* TEAM */
+/* тилизация иконок ссылки */
+.icon-team {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+}
+
+.social-link a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  /* background-color: aquamarine; */
+  border-radius: 50%;
+}
 
 .team {
   background-color: #f5f4fa;
@@ -281,8 +317,14 @@ img {
 
 .social-link {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-left: 32px;
+  list-style: none;
+  padding: 0;
+}
+
+.social-link li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .team-cards:hover {
@@ -378,6 +420,35 @@ img {
   text-transform: uppercase;
   color: var(--white-color);
 }
+
+.btn-ftr {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  width: 200px;
+  height: 50px;
+  color: var(--white-color);
+  background-color: var(--akcent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  /* text-align: left; */
+}
+
+/* .btn-ftr::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/send.svg);
+  left: 160px;
+  top: 13px;
+} */
 /* PORTFOLIO */
 
 /* PORTFOLIO-BTN */
