@@ -1,37 +1,48 @@
 html {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-ul{
-    list-style: none;
-    padding: 0;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
 .container {
-    outline:  1px solid tomato;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1170px;
-    // Потом включить когда писать под телефон
-    // max-width: 480px;
+  outline: 1px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  margin-bottom: 60px;
+  // Потом включить когда писать под телефон
+  // max-width: 480px;
 }
