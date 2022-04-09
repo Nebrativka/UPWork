@@ -1,0 +1,42 @@
+.section-team {
+  // display: flex;
+  // justify-content: space-between;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.team-list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
+  a {
+    outline: 1px solid teal;
+    display: block;
+    width: 44px;
+    height: 44px;
+    // background-color: teal;
+    border-radius: 50%;
+    fill: #afb1b8;
+  }
+  a:hover {
+    background-color: #2196f3;
+    fill: aliceblue;
+  }
+}
+
+.social-link {
+  margin: 12px;
+}
