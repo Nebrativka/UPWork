@@ -8,6 +8,11 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <title>Веб Студия</title>
 
 </head>
@@ -17,22 +22,22 @@
     <!-- HEADER -->
     <header>
         <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="/">Web Studio</a></li>
-                    <li><a href="./index.html">Студия</a></li>
-                    <li><a href="./portfolio.html">Портфолио</a></li>
-                    <li><a href="./practis.html">Контакты</a></li>
+            <nav class="site-nav">
+                <ul class="nav-item">
+                    <li><a href="./index.html" class="logo"><span class="logo-color">Web</span> Studio</a></li>
+                    <li class="nav-link"><a href="./index.html">Студия</a></li>
+                    <li class="nav-link"><a href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-link"><a href="./practis.html">Контакты</a></li>
                 </ul>
 
             </nav>
-            <ul>
-                <li><svg width="16">
+            <ul class="auth-nav">
+                <li><svg width="16" height="11">
                         <use href="./img/sprite.svg#mail"></use>
-                    </svg><a href="mailto:info@devstudio.com"></a>info@devstudio.com</li>
-                <li><svg width="16">
+                    </svg><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><svg width="16" height="15">
                         <use href="./img/sprite.svg#smartphone"></use>
-                    </svg><a href="tel:+380961111111"></a>+38 096 111 11 11</li>
+                    </svg><a href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -40,8 +45,10 @@
         <!-- HERO -->
         <section>
             <div class="container">
-                <h1>Эффективные решения для вашего бизнеса</h1>
-                <button type="button">Заказать услугу</button>
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <div class=" hero-btn">
+                    <button type="button" class="btn">Заказать услугу</button>
+                </div>
             </div>
         </section>
 

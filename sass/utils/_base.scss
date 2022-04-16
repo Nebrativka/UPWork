@@ -38,4 +38,20 @@ h4 {
 
 .container {
   outline: 1px solid tomato;
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn {
+  padding: 10px 32px;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: $textColorAccent;
+  color: $whitecolor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

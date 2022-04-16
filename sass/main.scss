@@ -1,4 +1,5 @@
-@import "./utils/base";
-@import "./utils/header";
-@import "./utils/team"
-
+@import './utils/variables';
+@import './utils/base';
+@import './components/header';
+@import './components/team';
+@import './components/hero';
